@@ -111,7 +111,7 @@ main {
   flex-direction: column;
   gap: 12px;
 }
-p{
+p {
   font-size: 16px;
 }
 .side-bar-part-3 {
@@ -129,22 +129,25 @@ p{
   padding: 6px;
   font-size: 14px;
 }
-.side-bar-part-4{
+.side-bar-part-4 {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
-.side-bar-button-div{
-  padding-top: 60px;
+.side-bar-button-div {
+  padding-top: 100px;
+  display: flex;
 }
-.side-bar button{
+.side-bar button {
   color: white;
   background-color: rgba(255, 96, 163, 1);
   border: 0 solid;
   border-radius: 16px;
-  width: 360px;
-  height: 50px;
+  /* width: 360px;
+  height: 50px; */
   font-size: 17px;
   font-weight: 600;
   cursor: pointer;
+  flex: 1;
+  height: 50px;
 }
