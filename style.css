@@ -12,33 +12,34 @@ main {
   display: grid;
   height: 100%;
   gap: 20px;
-  grid-template-columns: 767px 411px;
-  grid-template-rows: 98px 891px;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 100px 1fr;
 }
 .header {
   background-color: rgba(241, 240, 246, 1);
   border-radius: 32px;
-  /* width: 767px; */
-  /* height: 98px; */
   display: flex;
-  justify-content: space-between;
   padding: 24.5px 0 23.5px 22px;
+  gap: 26px;
 }
 .side-bar {
-  background-color: green;
+  background-color: rgba(255, 255, 255, 1);
   grid-row: 1/3;
   grid-column: 2 /3;
   border-radius: 32px;
+  color: rgba(33, 33, 33, 1);
+  padding: 32px 24px 32px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 .board {
   background-color: blue;
-  /* width: 767px; */
   border-radius: 32px;
 }
 .search {
   background-color: rgba(255, 255, 255, 1);
-  width: 570px;
-  height: 50px;
+  flex: 1;
   border-radius: 16px;
   display: flex;
   justify-content: space-between;
@@ -76,4 +77,33 @@ main {
   color: rgba(255, 255, 255, 1);
   font-size: 17px;
   font-weight: 600;
+  cursor: pointer;
+}
+hr {
+  background-color: rgba(0, 0, 0, 0.16);
+}
+.side-bar-svg {
+  background-color: rgba(33, 33, 33, 0.08);
+  width: 64px;
+  height: 64px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.side-bar-part-1 {
+  display: flex;
+  flex-direction: column;
+}
+.app-num {
+  background-color: rgba(255, 228, 239, 1);
+  color: rgba(255, 96, 163, 1);
+  width: 142px;
+  height: 32px;
+  border-radius: 99px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
 }
