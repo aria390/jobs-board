@@ -6,7 +6,7 @@
 body {
   height: 100vh;
   background-color: #d1d1d1;
-  padding: 100px;
+  padding: 20px 100px 20px 100px;
 }
 main {
   display: grid;
@@ -31,7 +31,8 @@ main {
   padding: 32px 24px 32px 24px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 20px;
+  overflow: auto;
 }
 .board {
   background-color: blue;
@@ -79,9 +80,6 @@ main {
   font-weight: 600;
   cursor: pointer;
 }
-hr {
-  background-color: rgba(0, 0, 0, 0.16);
-}
 .side-bar-svg {
   background-color: rgba(33, 33, 33, 0.08);
   width: 64px;
@@ -94,6 +92,7 @@ hr {
 .side-bar-part-1 {
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 .app-num {
   background-color: rgba(255, 228, 239, 1);
@@ -106,4 +105,46 @@ hr {
   align-items: center;
   font-size: 16px;
   font-weight: 400;
+}
+.side-bar-part-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+p{
+  font-size: 16px;
+}
+.side-bar-part-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+.side-bar-skills {
+  display: flex;
+  gap: 10px;
+}
+.skill {
+  background-color: rgba(33, 33, 33, 0.08);
+  border-radius: 99px;
+  padding: 6px;
+  font-size: 14px;
+}
+.side-bar-part-4{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.side-bar-button-div{
+  padding-top: 60px;
+}
+.side-bar button{
+  color: white;
+  background-color: rgba(255, 96, 163, 1);
+  border: 0 solid;
+  border-radius: 16px;
+  width: 360px;
+  height: 50px;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
 }
