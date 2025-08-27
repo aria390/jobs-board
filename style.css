@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +9,7 @@ body {
   height: 100vh;
   background-color: #d1d1d1;
   padding: 20px 100px 20px 100px;
+  font-family: "Inter", sans-serif;
 }
 main {
   display: grid;
@@ -35,8 +38,13 @@ main {
   overflow: auto;
 }
 .board {
-  background-color: blue;
+  background-color: rgba(241, 240, 246, 1);
   border-radius: 32px;
+  padding: 24px 25px 24px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  overflow: auto;
 }
 .search {
   background-color: rgba(255, 255, 255, 1);
@@ -52,7 +60,9 @@ main {
 .search-left {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding-left: 8px;
+  gap: 5px;
 }
 .search-right {
   display: flex;
@@ -135,7 +145,7 @@ p {
   gap: 16px;
 }
 .side-bar-button-div {
-  padding-top: 100px;
+  padding-top: 140px;
   display: flex;
 }
 .side-bar button {
@@ -143,11 +153,90 @@ p {
   background-color: rgba(255, 96, 163, 1);
   border: 0 solid;
   border-radius: 16px;
-  /* width: 360px;
-  height: 50px; */
   font-size: 17px;
   font-weight: 600;
   cursor: pointer;
   flex: 1;
   height: 50px;
+}
+.board-up {
+  display: flex;
+  justify-content: space-between;
+}
+.board-down {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 24px;
+}
+.board-div {
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 24px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.board-div-up {
+  display: flex;
+  gap: 8px;
+}
+.board-svg {
+  background-color: rgba(33, 33, 33, 0.08);
+  width: 64px;
+  height: 64px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.board-font-svg {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.board-need {
+  font-size: 18px;
+  font-weight: 600;
+}
+.board-company-name {
+  color: rgba(33, 33, 33, 0.6);
+  font-size: 16px;
+  font-weight: 400;
+}
+.board-div-down {
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+}
+.board-skills {
+  display: flex;
+  gap: 8px;
+}
+.board-skill {
+  background-color: rgba(33, 33, 33, 0.08);
+  border-radius: 99px;
+  padding: 7px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.board-div-final {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.board-div-final-left {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.board-div-final-right {
+  color: rgba(33, 33, 33, 0.6);
+  font-size: 14px;
+  font-weight: 400;
+}
+input:focus {
+  outline-width: 0;
 }
