@@ -240,3 +240,6 @@ p {
 input:focus {
   outline-width: 0;
 }
+input {
+  width: 500px;
+}
