@@ -242,4 +242,5 @@ input:focus {
 }
 input {
   width: 500px;
+  height: 50px;
 }
